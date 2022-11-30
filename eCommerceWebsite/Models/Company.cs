@@ -7,10 +7,14 @@ namespace eCommerceWebsite.Models
     {
         [Key]
         public int CompanyId { get; set; }
-        public string CompanyName { get; set; }
-        public string CompanyDescription { get; set; }
-        public string CompanyPhone { get; set; }
-        public string CompanyEmail { get; set;}
-        public List<Product> products { get; set; }
+        public string? CompanyName { get; set; }
+        public string? CompanyDescription { get; set; }
+        public string? CompanyPhone { get; set; }
+        public string? CompanyEmail { get; set;}
+        public List<Product>? products { get; set; }
+
+        //Relationship
+        public List<Company_User>? Companies_Users { get; set; }
+
     }
-    }
+}

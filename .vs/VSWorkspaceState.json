@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\eCommerceWebsite",
+    "\\eCommerceWebsite\\Properties",
+    "\\eCommerceWebsite\\Views",
+    "\\eCommerceWebsite\\Views\\Home",
+    "\\eCommerceWebsite\\Views\\Shared",
+    "\\eCommerceWebsite\\wwwroot",
+    "\\eCommerceWebsite\\wwwroot\\css",
+    "\\eCommerceWebsite\\wwwroot\\js",
+    "\\eCommerceWebsite\\wwwroot\\lib"
+  ],
+  "SelectedNode": "\\eCommerceWebsite\\eCommerceWebsite.csproj",
+  "PreviewInSolutionExplorer": false
+}
