@@ -1,4 +1,6 @@
-﻿using eCommerceWebsite.Data.Enums;
+﻿using System;
+using System.Linq;
+using eCommerceWebsite.Data.Enums;
 using eCommerceWebsite.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 

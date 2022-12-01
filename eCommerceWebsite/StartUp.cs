@@ -1,4 +1,5 @@
 ﻿using eCommerceWebsite.Data;
+using Microsoft.Extensions.Options;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
 namespace eCommerceWebsite
@@ -12,8 +13,8 @@ namespace eCommerceWebsite
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDBContext>(options -> options.UseSqlServer(Configuration.
-                GetConnectionString("DefaultConnectionString")));
+            IServiceCollection serviceCollection = services.AddDbContext<AppDBContext>(Options -> options.UseSqlServer(Configuration.
+            GetConnectionString("DefaultConnectionString")));
             services.AddControllersWithViews();
         }
 
