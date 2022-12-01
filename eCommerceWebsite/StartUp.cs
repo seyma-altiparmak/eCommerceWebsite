@@ -12,12 +12,13 @@ namespace eCommerceWebsite
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDBContext>();
+            services.AddDbContext<AppDBContext>(options -> options.UseSqlServer(Configuration.
+                GetConnectionString("DefaultConnectionString")));
             services.AddControllersWithViews();
         }
 
         public void Configure(IApplicationBuilder app,
-                              IHostingEnvironment env)
+                              IWebHostEnvironment env)
         {
             if (env is null)
             {
